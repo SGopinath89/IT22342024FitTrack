@@ -1,0 +1,16 @@
+{
+  "name": "it22342024fittrack",
+  "version": "1.0.0",
+  "description": "gym app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "piumal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4",
+    "nodemon": "^3.1.4"
+  }
+}
