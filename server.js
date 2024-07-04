@@ -12,7 +12,7 @@ const app = express()
 app.use(bodyParser.json());
 
 // DB Config
-const db = process.env.MONGO_URI || 'mongodb+srv://sahanperera572:APiumal5#@cluster0.tsqan0p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const db = process.env.MONGO_URI; 
 
 // Connect to MongoDB
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
