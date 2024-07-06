@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+//const config = require('config')
 
 const app =express()
 const port = 3000
@@ -32,6 +33,8 @@ async function run() {
   }
 }
 run().catch(console.dir);
+
+app.use('/api/users', require('./routes/userRoutes'));
 
 app.listen(port,()=>{
     console.log(`Listerning on port: ${port}`);
