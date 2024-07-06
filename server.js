@@ -1,8 +1,11 @@
-const mongoose = require('mongoose');
 const express = require('express')
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
 
 const app =express()
 const port = 3000
+
+app.use(bodyParser.json());
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://fitTrackDB:hatVQCmbzGsF40RW@cluster0.tsqan0p.mongodb.net/?appName=Cluster0";
