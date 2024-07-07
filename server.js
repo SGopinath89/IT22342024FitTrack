@@ -35,6 +35,7 @@ async function run() {
 run().catch(console.dir);
 
 app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/schedules', require('./routes/scheduleRoutes'));
 
 app.listen(port,()=>{
     console.log(`Listerning on port: ${port}`);
